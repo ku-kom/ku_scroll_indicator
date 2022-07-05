@@ -1,0 +1,21 @@
+{
+    "name": "university-of-copenhagen/ku-scroll-indicator",
+    "type": "typo3-cms-extension",
+    "description": "Adds scroll progress bar at the top of the page.",
+    "homepage": "https://www.ku.dk/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UniversityOfCopenhagen\\KuScrollIndicator\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ku_scroll_indicator"
+        }
+    }
+}
