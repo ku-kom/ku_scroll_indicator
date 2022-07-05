@@ -1,3 +1,18 @@
+##############
+#### PAGE ####
+##############
+
+page = PAGE
+page {
+    includeJSFooter {
+        ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/JavaScript/Dist/ku-scroll-indicator.min.js
+    }
+	10 {
+		templateRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Templates/Page/
+        partialRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Partials/Page/
+        layoutRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Layouts/Page/
+	}
+}
 ################################
 #### KU SCROLL INDICATOR #######
 ################################
@@ -7,10 +22,6 @@ tt_content.ku_scroll_indicator {
 	templateRootPaths.10 = EXT:ku_scroll_indicator/Resources/Private/Templates/ContentElements/
 	partialRootPaths {
 		10 = EXT:ku_scroll_indicator/Resources/Private/Partials/ContentElements/
-		# Fallback to templates from other extensions:
-		20 = EXT:ku_prototype/Resources/Private/Partials/ContentElements/
-		30 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements/
-		
 	}
 
 	dataProcessing {
