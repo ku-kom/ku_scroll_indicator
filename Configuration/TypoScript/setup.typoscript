@@ -4,31 +4,19 @@
 
 page = PAGE
 page {
+	includeCSS {
+        ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/Css/ku-scroll-indicator.css
+    }
     includeJSFooter {
         ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/JavaScript/Dist/ku-scroll-indicator.min.js
     }
+	# bodyTagCObject.stdWrap.append = TEXT
+	# bodyTagCObject.stdWrap.append.value (
+	# 	<div class="progress scroll-indicator"><div class="progress-bar" id="horizontal-scroll" role="progressbar" aria-valuetext="Scroll progress: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="-1"></div></div>
+	#)
 	10 {
-		templateRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Templates/Page/
-        partialRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Partials/Page/
-        layoutRootPaths.3 = EXT:ku_scroll_indicator/Resources/Private/Layouts/Page/
-	}
-}
-################################
-#### KU SCROLL INDICATOR #######
-################################
-tt_content.ku_scroll_indicator =< lib.contentElement
-tt_content.ku_scroll_indicator {
-	templateName = ScrollIndicator
-	templateRootPaths.10 = EXT:ku_scroll_indicator/Resources/Private/Templates/ContentElements/
-	partialRootPaths {
-		10 = EXT:ku_scroll_indicator/Resources/Private/Partials/ContentElements/
-	}
-
-	dataProcessing {
-		# Handle image upload:
-		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-		10 {
-			references.fieldName = image
-		}
+		templateRootPaths.30 = EXT:ku_scroll_indicator/Resources/Private/Templates/Page/
+        partialRootPaths.30 = EXT:ku_scroll_indicator/Resources/Private/Partials/Page/
+        layoutRootPaths.30 = EXT:ku_scroll_indicator/Resources/Private/Layouts/Page/
 	}
 }

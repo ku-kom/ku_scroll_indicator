@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "env": {
+      "es6": true,
+      "node": true
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "capitalized-comments": "off",
+    "no-console": "error",
+    "no-negated-condition": "off"
+  }
+}
