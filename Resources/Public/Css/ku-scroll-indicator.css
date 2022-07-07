@@ -3,6 +3,7 @@
     height: 1px;
     margin: 0;
     background-color: var(--bs-gray-200);
+    border-radius: 0;
     opacity: 0
 }
 
