@@ -2,6 +2,10 @@
     "name": "university-of-copenhagen/ku-scroll-indicator",
     "type": "typo3-cms-extension",
     "description": "Adds scroll progress bar at the top of the page.",
+    "authors": [{
+        "name": "Nanna Ellegaard",
+        "role": "Developer"
+    }],
     "homepage": "https://www.ku.dk/",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
