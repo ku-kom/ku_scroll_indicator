@@ -5,7 +5,7 @@
 page = PAGE
 page {
 	includeCSS {
-        ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/Css/ku-scroll-indicator.min.css
+        ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/Css/Dist/ku-scroll-indicator.min.css
     }
     includeJSFooter {
         ku_scroll_indicator = EXT:ku_scroll_indicator/Resources/Public/JavaScript/Dist/ku-scroll-indicator.min.js
