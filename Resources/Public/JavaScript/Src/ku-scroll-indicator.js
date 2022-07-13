@@ -13,8 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const _timeoutIDs = {};
     let $progressbar;
 
+    /**
+     * 
+     * @param {*} paramFunction 
+     * @param {*} timeoutMs 
+     * @param {*} functionID 
+     */
     const nonBlockingRepetiveFunctionCall = (paramFunction, timeoutMs, functionID = '') => {
-        // Throttle function
         if (!_timeoutIDs[paramFunction + functionID]) {
             // add timeout to not block the GUI
             _timeoutIDs[paramFunction + functionID] = window.setTimeout(() => {
@@ -25,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Calculate progress and update progress bar
+     */
     const scrollProgress = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -35,8 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
         $progressbar.style.setProperty('--scrollPercentage', scroll + '%');
     }
 
+    /**
+     * Append progress bar html
+     */
     const appendProgressbar = () => {
-        // Append progressbar html
         const target = document.querySelector('header:first-of-type');
         const bar = document.createElement('div');
         bar.classList.add('progress', 'scroll-indicator');
